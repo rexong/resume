@@ -1,6 +1,6 @@
 # **Ong Han Wei**
 
-| Mobile: +65 86994184 | Email: onghanwei@u.nus.edu | Github: @rexong |
+Mobile: +65 86994184 | Email: onghanwei@u.nus.edu | Github: @rexong
 
 ---
 
