@@ -1,10 +1,10 @@
 @page {
     size: A4;
-    margin: 5mm;
+    margin: 4mm;
 }
 
 * {
-    margin: 1mm 0mm;
+    margin: 0.5mm 0mm;
     padding:0;
     box-sizing: border-box;
 }
@@ -19,7 +19,7 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 3mm;
+    margin: 2mm;
 }
 
 h1 {
@@ -28,9 +28,13 @@ h1 {
 
 h2 {
     font-size: 16px;
-    margin: 1mm 0mm;
+    margin: 0.5mm 0mm;
 }
 
 a {
     text-decoration: none;
+}
+
+td {
+    padding: 0.5mm 0mm;
 }
