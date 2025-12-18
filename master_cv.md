@@ -120,6 +120,26 @@ Duration: May 2023 - Aug 2023
 |Action|Analyzed and Identified performance bottleneck in PDF generation caused by Headless Browsers. Refactored pipline to use Markdown and Pandoc for lightweight conversion.| Tools: Pandoc, Markdown, Node.js; Context: Generation of report was slow (1 min/report)|
 |Results|Reduced report generation time by over 90%|Metrics: 90% reduction in generation time.|
 
+### Independent Contractor (Automation Grading) - Dart Consulting & Training Pte Ltd
+
+Duration: Mar 2023 - Apr 2023
+
+|C.A.R. Component|Raw Data Extracted|Competency & Action Verb|
+|:--------------:|:-----------------|:-----------------------|
+|Context|Focused on reliability of assessment tools.|Anchors: Optimized, Enhanced.|
+|Action|Analyzed and refactored test cases using Pytest. Optimized the underlying grading logic workflow.| Tools: Python, Pytest; Context: Grading latency was too high (3 mins/submission); needed faster feedback loops.|
+|Results|Slashed execution time from 180 seconds to 10 seconds per submission (18x speed improvement). Boosted test coverage by 20%, increasing evaluation reliability.|Metrics: 18x speedup (94% reduction in latency); 20% increase in test coverage.|
+
+### Software Developer Intern - Kinexcs Pte Ltd
+
+Duration: Jun 2022 - Aug 2022
+
+|C.A.R. Component|Raw Data Extracted|Competency & Action Verb|
+|:--------------:|:-----------------|:-----------------------|
+|Context|Frontend Engineering & Product Growth. Focused on User Experience and pilot adoption.|Anchors: Developed, Refined, Resolved, Enabled.|
+|Action|Built responsive UIs using React.js. Refined user journey based on direct feedback from prospective customers. Identified nd resolved UI/UX bugs prior to launch.| Tools: React; Context: Early-stage product needing stability for market entry.|
+|Results|Delivered feature improvements instrumental in securing 3 pilot partnerships with medical clinics.|Metrics: Secured 3 pilot partnerships.|
+
 ## Projects
 
 ## Awards and Honours

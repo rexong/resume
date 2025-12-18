@@ -1,4 +1,4 @@
-🏥 Software Developer Intern - Kinexcs
+Software Developer Intern - Kinexcs
 
 Duration: May 2023 - Aug 2023
 
