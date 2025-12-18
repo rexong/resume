@@ -142,4 +142,52 @@ Duration: Jun 2022 - Aug 2022
 
 ## Projects
 
-## Awards and Honours
+### ThunderbirdAuth - Developer
+
+Duration: Oct 2025 - Dec 2025
+
+|C.A.R. Component|Raw Data Extracted|Competency & Action Verb|
+|:--------------:|:-----------------|:-----------------------|
+|Context|Backend Engineering. Focused on building lean, high-performance systems.|Anchors: Engineered, Designed, Implemented.|
+|Action|Developed a lightweight Identity Provider using Go's Standard Library and SQLite to facilitate authentication on a resource-constrained home server. Implemented Basic and LDAP authentication protocols.| Tools: Go, SQLite, LDAP; Context: Prioritized standard libraries over heavy frameworks to maintain a minimal system footprint.|
+|Results|Replaced existing resource intensive solution with a custom-fit, high-efficiency alternative tailored for low-spec hardware, ensuring optimal performance and low resource consumption for home server process|Metrics: To achieve functional parity with complex IdPs while significantly reducing background process overhead.|
+
+### OptimoveAI - Developer
+
+Duration: Feb 2025 - Apr 2025
+
+|C.A.R. Component|Raw Data Extracted|Competency & Action Verb|
+|:--------------:|:-----------------|:-----------------------|
+|Context|AI Integration & Data Engineering. Focus on noise reduction and data trustworthiness.|Anchors: Prototyped, Integrated.|
+|Action|Built a data processing pipeline using Flask and OpenAI, to validate and deduplicate crowdsourced traffic data from LTA's public API. Integrated a dual-LLM logic to: 1) Classify and merge acknowledged events to reduce data noise, and 2) Score new events to automate prioritization for authorities.| Tools: Python, Flask, Streamlit, OpenAI, LTA API; Context: Developed a full-stack demo within 2 weeks.|
+|Results|Successfully developed a functional proof-of-concept that addressed the unreliability of crowdsourced information through automated event validation and noise reduction.|Metrics: Delivered a working prototype capable of generating structured outputs for real-time event scoring.|
+
+### Peerprep - Developer
+
+Duration: Aug 2023 - Oct 2023
+
+|C.A.R. Component|Raw Data Extracted|Competency & Action Verb|
+|:--------------:|:-----------------|:-----------------------|
+|Context|Scalable Backend & Serverless Architecture. Focus on high-concurrency and automated data ingestion.|Anchors: Engineered, Containerized.|
+|Action|Developed Go-based user and authentication microservices, implementing OAuth2/OIDC with JWT for secure, stateless sessions. Orchestrated a GCP Cloud Function to automate the ingestion of 200+ LeetCode questions. Built a React frontend utilizing WebSockets for real-time user updates.| Tools: Go, React, GCP Cloud Function, Docker, Websockets, JWT, OAuth2/OIDC; Context: Focused on building a scalable system for 300+ accounts.|
+|Results|Achieved a 60x time reduction in populating question banks compared to manual entry. Successfully containerized services for consistent deployment and ensured system scalability for over 300 accounts.|Metrics: 60x faster data ingestion; Scaled for 300+ accounts.|
+
+### TEAMMATES (NUS-OSS) - Developer
+
+Duration: Jun 2023 - Aug 2023
+
+|C.A.R. Component|Raw Data Extracted|Competency & Action Verb|
+|:--------------:|:-----------------|:-----------------------|
+|Context|Open Source Contribution & Quality Assurance. Focus on frontend reliability and defect management.|Anchors: Contributed, Identified, Strengthened.|
+|Action|Contributed 6 Pull Requests (PRs) to improve the Angular-based frontend of a large-scale open-source platform used by thousands. Conducted rigorous testing to identify and document 2 production-level defects.| Tools: Angular, Jest; Context: Collaborated in a high-traffic OSS environment with thousands of active users.|
+|Results|Prevented potential system failures by addressing critical defects prior to release, strengthening the overall reliability of the student feedback platform.|Metrics: To ensure project stability and enhance user experience for a massive student population.|
+
+### MyInsuRec - Developer
+
+Duration: Aug 2022 - Oct 2022
+
+|C.A.R. Component|Raw Data Extracted|Competency & Action Verb|
+|:--------------:|:-----------------|:-----------------------|
+|Context|Product Modernization & Workflow Automation. Focus on UI/UX optimization and CRM efficiency.|Anchors: Transformed, Modernized.|
+|Action|Transformed a legacy system into a modern CRM platform by designing an intuitive UI/UX and implementing automated workflows for insurance agents.| Tools: Java, JavaFx; Context: Focused on improving client tracking and meeting scheduling.|
+|Results|Increased insurance agents’ client tracking and meeting efficiency by 30% through streamlined navigation and automated administrative tasks.|Metrics: 30% increase in operational efficiency.|
