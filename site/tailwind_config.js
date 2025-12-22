@@ -17,6 +17,20 @@ tailwind.config = {
       fontFamily: {
         display: ["Fira Code", "monospace"],
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            fontSize: '1.125rem', // Base content at 18px
+            lineHeight: '1.75',
+            color: '#CDD6F4',
+            'h2': {
+              fontSize: '1.25rem', // Headers at 20px
+              marginTop: '2em',
+              marginBottom: '1em',
+            },
+          },
+        },
+      },
       borderRadius: {
         DEFAULT: "0.25rem",
       },
