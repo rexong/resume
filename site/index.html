@@ -312,38 +312,124 @@
 							<section class="mb-8">
 								<h2 class="font-bold text-ctp_peach tracking-wide text-sm mb-2"># PERSONAL PROJECTS</h2>
 								<div class="space-y-4">
-									<p>
-										<span class="font-bold text-ctp_green">/projects/alpha_app.sh</span>
-										<span class="px-2 py-0.5 ml-2 text-xs bg-ctp_green/20 text-ctp_green rounded">EXEC</span>
-										<br>
-										CLI-based task management engine optimized for developer productivity. Features real-time sync and
-										plugin architecture.
-										<span class="text-ctp_mauve">
-											#Typescript #Node.js
-										</span>
-									</p>
-									<p>
-										<span class="font-bold text-ctp_green">/projects/data_tool.sh</span>
-										<span class="px-2 py-0.5 ml-2 text-xs bg-ctp_sapphire/20 text-ctp_sapphire rounded">SCRIPT</span>
-										<br>
-										High-performance data analysis pipeline for large CSV datasets. Processes millions of rows with
-										minimal latency.
-										<span class="text-ctp_mauve">
-											#Python #Pandas
-										</span>
-									</p>
+									<div>
+										<p>
+											<span class="font-bold text-ctp_green">ThunderbirdAuth</span>
+											- Developer <span class="text-ctp_subtext0">(Oct 2025 - Dec 2025)</span>
+											<br>
+											A lightweight, file-based authentication server built for home-lab environments.
+										</p>
+										<p>
+											<span class="text-ctp_sapphire">--philosophy</span>
+										</p>
+										<ul>
+											<li>Engineered to replace resource-heavy commercial solutions (like Authentik)
+												on constrained hardware (2 cores, 16GB RAM).</li>
+											<li>Prioritized minimal dependencies by utilizing the Go Standard Library exclusively,
+												avoiding heavy frameworks.</li>
+										</ul>
+										<p>
+											<span class="text-ctp_sapphire">--architecture</span>
+										</p>
+										<ul>
+											<li>Implemented Basic Authentication and LDAP protocols, with
+												extensibility designed for OIDC.</li>
+											<li>Handled password hashing via bcrypt and managed session tokens
+												in-memory with a persistent SQLite (file-based) backend.</li>
+										</ul>
+									</div>
+									<div>
+										<p>
+											<span class="font-bold text-ctp_green">OptiMove AI</span>
+											- Developer <span class="text-ctp_subtext0">(Feb 2025 - Apr 2025)</span>
+											<br>
+											A agentic pipeline to resolve inconsistency in crowdsourced traffic data.
+										</p>
+										<p>
+											<span class="text-ctp_sapphire">--problem_statement</span>
+											<br>
+											Tasked with utilizing LTA's public API to solve reliability issues in
+											crowdsourced transport information.
+										</p>
+										<p>
+											<span class="text-ctp_sapphire">--solution</span>
+										</p>
+										<ul>
+											<li>Implemented an LLM to cross-reference new updates against
+												acknowledged events, grouping similar reports to reduce data noise.</li>
+											<li>Designed a scoring LLM to rank new events, enabling
+												authorities to prioritize response resources effectively.</li>
+											<li>Flask backend invoking the AI pipeline, visualized via Streamlit.</li>
+										</ul>
+									</div>
+									<div>
+										<p>
+											<span class="font-bold text-ctp_green">PeerPrep</span>
+											- Developer <span class="text-ctp_subtext0">(Aug 2023 - Oct 2023)</span>
+											<br>
+											Collaborative Technical Interview Platform
+										</p>
+										<p>
+											<span class="text-ctp_sapphire">--microservices</span>
+										</p>
+										<ul>
+											<li>Built User and Auth services in Go, containerized to scale to
+												300+ accounts.</li>
+											<li>Implemented secure OAuth2/OIDC protocols with JWT for stateless
+												authentication.</li>
+											<li>Developed a React frontend using WebSockets for live user updates.</li>
+										</ul>
+										<p>
+											<span class="text-ctp_sapphire">--cloud_automation</span>
+										</p>
+										<ul>
+											<li>Orchestrated a serverless GCP Cloud Function (Go) to ingest 200+ LeetCode
+												questions, achieving a 60x reduction in database population time compared to manual entry.</li>
+										</ul>
+									</div>
+									<div>
+										<p>
+											<span class="font-bold text-ctp_green">TEAMMATES</span>
+											- Contributor <span class="text-ctp_subtext0">(Jun 2023 - Aug 2023)</span>
+											<br>
+											A feedback management system used by thousands of students globally.
+										</p>
+										<p>
+											<span class="text-ctp_sapphire">--contributions</span>
+										</p>
+										<ul>
+											<li>Authored 6 merged Pull Requests to enhance the Angular-based
+												user interface.</li>
+											<li>Identified and documented 2 critical production-level defects,
+												preventing system failures and improving overall stability.</li>
+										</ul>
+									</div>
+									<div>
+										<p>
+											<span class="font-bold text-ctp_green">MyInsuRec</span>
+											- Developer <span class="text-ctp_subtext0">(Aug 2022 - Oct 2022)</span>
+											<br>
+											Legacy System Modernization
+										</p>
+										<p>
+											<span class="text-ctp_sapphire">--outcome</span>
+										</p>
+										<ul>
+											<li>Transformed a legacy system into a modern CRM platform, increasing insurance
+												agents’ client tracking and meeting efficiency by 30% through automated workflows.</li>
+										</ul>
+									</div>
 								</div>
 							</section>
 							<section>
 								<h2 class="font-bold text-ctp_peach tracking-wide text-sm mb-2"># AUTHOR</h2>
-								<p>Written and maintained by Han Wei.</p>
+								<p>Written and maintained by Han Wei. <br>
+									Website designed with Stitch.</p>
 								<div class="not-prose space-y-1 mt-2">
 									<p><span class="text-ctp_sapphire w-16 inline-block">Email:</span>
-									<a class="text-ctp_sky hover:underline" href="mailto:ethan@example.com">ethan@example.com</a></p>
+									<a class="text-ctp_sky hover:underline" href="mailto:onghanwei@u.nus.edu">onghanwei@u.nus.edu</a></p>
 									<p><span class="text-ctp_sapphire w-16 inline-block">GitHub:</span>
-									<a class="text-ctp_sky hover:underline" href="https://github.com/ethan-dev">github.com/ethan-dev</a></p>
-									<p><span class="text-ctp_sapphire w-16 inline-block">LinkedIn:</span>
-									<a class="text-ctp_sky hover:underline" href="https://linkedin.com/in/ethan-dev">linkedin.com/in/ethan-dev</a></p>
+									<a class="text-ctp_sky hover:underline" href="https://github.com/rexong">github.com/rexong</a></p>
 								</div>
 							</section>
 						</div>
