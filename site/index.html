@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>Developer Portfolio Website</title>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="./tailwind_config.js"></script>
+		<link rel="stylesheet" type="text/css" href="./styles.css">
+	</head>
+
+	<body class="bg-ctp_base text-ctp_text font-display text-sm">
+		<div class="flex h-screen">
+			<aside class="w-64 bg-ctp_mantle flex flex-col shrink-0">
+				<div class="px-4 py-2 text-xs font-bold uppercase tracking-wider text-ctp_subtext0 border-b border-ctp_crust">
+					Explorer
+				</div>
+				<nav class="flex-1 px-2 py-2 space-y-1">
+					<div class="flex items-center text-ctp_text">
+						<span class="material-icons text-base mr-1">expand_more</span>
+						<span class="font-bold">PORTFOLIO</span>
+					</div>
+					<ul class="pl-4 space-y-1 mt-1">
+						<li class="bg-ctp_green/10 rounded">
+							<a class="flex items-center px-2 py-1 text-ctp_green" href="#">
+								<span class="material-icons text-base mr-2 text-ctp_sky">description</span>
+								portfolio.1
+							</a>
+						</li>
+						<li>
+							<div class="flex items-center px-2 py-1">
+								<span class="material-icons text-base mr-1 text-ctp_peach">expand_more</span>
+								<span>projects</span>
+							</div>
+							<ul class="pl-5 border-l border-ctp_crust ml-2">
+								<li class="flex items-center py-1">
+									<span class="material-icons text-ctp_peach mr-2">biotech</span>
+									alpha_app.sh
+								</li>
+								<li class="flex items-center py-1">
+									<span class="material-icons text-ctp_mauve mr-2">database</span>
+									data_tool.sh
+								</li>
+							</ul>
+						</li>
+						<li class="flex items-center px-2 py-1">
+							<span class="material-icons text-base mr-2 text-ctp_subtext0">settings</span>
+							config.lua
+						</li>
+						<li class="flex items-center px-2 py-1">
+							<span class="material-icons text-base mr-2 text-ctp_sapphire">info</span>
+							README.md
+						</li>
+					</ul>
+				</nav>
+				<div class="p-2 border-t border-ctp_crust text-xs text-ctp_subtext0 flex justify-between items-center">
+					<span>MAN(1)</span>
+					<span>Read-only</span>
+				</div>
+			</aside>
+			<main class="flex-1 flex flex-col">
+				<header class="flex items-center justify-between px-4 py-2 bg-ctp_mantle border-b border-ctp_crust">
+					<div class="flex items-center space-x-2">
+						<span class="material-icons text-ctp_sky">description</span>
+						<span class="text-ctp_subtext0">/home / rex / man /</span>
+						<span class="text-ctp_text">portfolio.1</span>
+						<span class="ml-2 px-2 py-0.5 text-xs bg-ctp_crust text-ctp_subtext0 rounded">READ ONLY</span>
+					</div>
+					<div class="flex items-center space-x-4 text-xs text-ctp_subtext0">
+						<span>UNIX</span>
+						<span>UTF-8</span>
+						<span>MAN(1)</span>
+					</div>
+				</header>
+				<div class="flex-1 overflow-y-auto p-6 lg:p-8">
+					<div class="grid grid-cols-12 gap-4">
+						<div class="col-span-11 prose prose-sm max-w-none text-ctp_text prose-headings:font-bold prose-headings:text-ctp_peach prose-headings:tracking-wide">
+							<section class="mb-8">
+								<h2 class="font-bold text-ctp_peach tracking-wide text-sm mb-2"># NAME</h2>
+								<p>
+									<span class="font-bold text-ctp_green">Han Wei</span>
+									- portfolio of my experiences
+								</p>
+							</section>
+							<section class="mb-8">
+								<h2 class="font-bold text-ctp_peach tracking-wide text-sm mb-2"># SYNOPSIS</h2>
+								<p>
+									<span class="font-bold text-ctp_green">Han Wei</span>
+									<span class="text-ctp_subtext0">[</span>--role<span class="text-ctp_sky">="Software
+										Engineer"</span><span class="text-ctp_subtext0">]</span>
+									<span class="text-ctp_subtext0">[</span>--location<span class="text-ctp_sky">="Singapore"</span><span class="text-ctp_subtext0">]</span>
+									<span class="text-ctp_subtext0">[</span>--status<span class="text-ctp_sky">="Open To Work"</span><span class="text-ctp_subtext0">]</span>
+								</p>
+							</section>
+							<section class="mb-8">
+								<h2 class="font-bold text-ctp_peach tracking-wide text-sm mb-2"># DESCRIPTION</h2>
+								<p>
+									Hi, I am <span class="font-bold text-ctp_green">Han Wei</span>, an aspired software engineer with a
+									desire to build efficient, scalable, and maintainable system. Graduating with a Bachelor of Computing
+									from the National University of Singapore with a Second Major in Quantitative Finance, I approach
+									development like solving problems equipped with strong engineering fundamental.
+								</p>
+								<p>
+									My technical philosophy centers on impact and optimization. Whether I am architecting an LLM-evaluation
+									framework to cut QA time by 90%, refactoring document pipelines to improve processing speed by 12x, or
+									containerizing microservices for secure scaling, my goal is to solve complex business problem through
+									robust code. I am a problem solver who adapts to the right tools - be it Cloud infrastructure,
+									Full-stack frameworks or AI integration - to deliver effective solutions.
+								</p>
+								<p>
+									Outside of engineering, I enjoy the strategic rigor of Chinese Chess and Snooker/8-ball, hobbies that
+									keep my problem-solving reflexes sharp. I also channel my technical curiosity into my environment,
+									exploring Arch Linux and configuring Neovim to constantly refine my development workflow.
+								</p>
+							</section>
+							<section class="mb-8">
+								<h2 class="font-bold text-ctp_peach tracking-wide text-sm mb-2"># OPTIONS</h2>
+								<div class="space-y-4">
+									<p>
+										<span class="text-ctp_sapphire">--languages</span>
+										Proficient in Python, JavaScript/TypeScript, Go and Java.
+									</p>
+									<p>
+										<span class="text-ctp_sapphire">--frameworks</span>
+										Competent with Next.js and React ecosystem for frontend interactions, paired with backend solutions
+										like FastAPI, Flask and Echo. Capable of integrating AI/ML libraries such as LangChain and Haystack
+										into practical applications.
+									</p>
+									<p>
+										<span class="text-ctp_sapphire">--tools</span>
+										Experienced in DevOps practices including Docker containerization and cloud-native deployments via AWS
+										Lambda and GCP Cloud Functions. Experienced in setting up automation pipelines using Playwright.
+									</p>
+								</div>
+							</section>
+							<section class="mb-8">
+								<h2 class="font-bold text-ctp_peach tracking-wide text-sm mb-2"># EDUCATION</h2>
+								<p>
+									<span class="font-bold text-ctp_green">National University of Singapore</span>
+								</p>
+								<p>
+									Bachelor of Computing (Computer Science) with Honours (Distinction) <br>
+									Second Major in Quantitative Finance
+								</p>
+								<div class="space-y-4">
+									<p>
+										<span class="text-ctp_sapphire">--stats</span>
+										<br>
+										Duration: Aug 2021 - Jun 2025 <br>
+										GPA: 4.34 / 5.0
+									</p>
+									<p>
+										<span class="text-ctp_sapphire">--accolades</span>
+										<br>
+										Dean's List (AY23/24 Semester 1) <br>
+										Distinction in Software Engineering <br>
+										Merit in Artificial Intelligence
+									</p>
+									<div>
+										<p>
+											<span class="text-ctp_sapphire">--teaching_assistant</span>
+											Contributed to academic as a TA for modules
+										</p>
+										<ol>
+											<li>
+												<span>CS4248 Natural Language Processing</span>
+												<br>
+												Mentored 4 project groups (20 students) and contributed to academic rigor by authoring 5 questions
+												for the final examination.
+											</li>
+											<li>
+												<span>CS3219 Software Engineering Principles and Patterns</span>
+												<br>
+												Tutored 2 classes (40+ students), authored weekly content slides for insturction, and mentored 4
+												project groups through a development lifecycle.
+											</li>
+										</ol>
+									</div>
+								</div>
+							</section>
+							<section class="mb-8">
+								<h2 class="font-bold text-ctp_peach tracking-wide text-sm mb-2"># INTERNSHIPS</h2>
+								<div class="space-y-4">
+									<div>
+										<p>
+											<span class="font-bold text-ctp_green">NCS Pte Ltd</span>
+											- Generative AI Intern <span class="text-ctp_subtext0">(Jan 2025 - Jun 2025)</span>
+										</p>
+										<p>
+											<span class="text-ctp_sapphire">--spar</span>
+											Engineered a "Human-in-the-Loop" evaluation platform to address high-risk LLM hallucinations.
+										</p>
+										<ul>
+											<li>Built a POC using Python, Haystack, and Streamlit that integrates
+												synthetic conversation generation with user-defined personas.</li>
+											<li>Implemented an evaluation pipeline utilizing RNN classification to
+												categorize feedback and create "LLM-as-a-Judge" evaluators.</li>
+											<li>Clinched 1st Place in the "NEXT Ignite" department-wide hackathon and
+												secured management resources for productization.</li>
+											<li>Platform projected to achieve 90% accuracy in evaluation within 5
+												iterations.</li>
+										</ul>
+										<p>
+											<span class="text-ctp_sapphire">--automation_utilities</span>
+											Explored different technology that helps with development and data engineering.
+										</p>
+										<ul>
+											<li><span>mcp-cli:</span>
+											Explored MCP for complex automation, granting a CLI chatbot
+											control over Playwright servers and file systems to write documentation and generate
+											test cases.</li>
+											<li><span>Chat Annotation Application:</span>
+											Assemble 5 critics to generate 200-300 pieces of
+											high-quality critiqued data to configure the LLM evaluators.</li>
+											<li><span>Screenshot Automation:</span>
+											Wrote scripts to dynamically capture up-to-date screenshots,
+											preventing outdated documentation visuals.</li>
+										</ul>
+									</div>
+									<div>
+										<p>
+											<span class="font-bold text-ctp_green">DNDTS Pte Ltd</span>
+											- Software Developer Intern <span class="text-ctp_subtext0">(May 2024 - Aug 2024)</span>
+										</p>
+										<p>
+											<span class="text-ctp_sapphire">--multi_barcode_system</span>
+											Full-stack engineering focused on process automation and computer vision.
+										</p>
+										<ul>
+											<li><span>Solution:</span>
+											Developed a Next.js mobile-web application integrated with
+											Roboflow computer vision models to identify, crop, and decode multiple
+											barcodes from a single image.</li>
+											<li>Optimization: Replaced manual infrared scanning, reducing shipment
+												processing time from 4 hours to under 2 hours (50% efficiency increase).</li>
+											<li>Scalability: Enabled staff unfamiliar with the process to execute
+												high-volume shipments effectively.</li>
+										</ul>
+										<p>
+											<span class="text-ctp_sapphire">--rag_customer_support</span>
+											Leverage on RAG to build a chatbot that improves the support's efficiency.
+										</p>
+										<ul>
+											<li>Architected a Retrieval-Augmented Generation (RAG) pipeline using
+												LangChain, ChromaDB, and Streamlit, containerized via Docker.</li>
+											<li>Generated $150,000 in annual savings by reducing support headcount
+												requirements.</li>
+											<li>Reduced new staff onboarding time by 60% (from 1 week to 2
+												days) by automating knowledge retrieval from a 300-page handbook.</li>
+										</ul>
+									</div>
+									<div>
+										<p>
+											<span class="font-bold text-ctp_green">Kinexcs Pte Ltd</span>
+											- Software Developer Intern <span class="text-ctp_subtext0">(May 2023 - Aug 2023)</span>
+										</p>
+										<p>
+											<span class="text-ctp_sapphire">--report_generator</span>
+											Generate Comparison Reports that collates multiple past data of patient into clear visuals.
+										</p>
+										<ul>
+											<li>Integrated Chart.js for visual analytics to track patient recovery trends.</li>
+											<li>Reduced clinician analysis time from 15 minutes down to under 1 minute per patient.</li>
+										</ul>
+										<p>
+											<span class="text-ctp_sapphire">--report_generator_optimization</span>
+											Technical decision-making focused on cloud architecture and bottleneck resolution.
+										</p>
+										<ul>
+											<li>Identified performance bottlenecks in PDF generation caused by
+												heavy "Headless Browser" rendering (taking ~1 min/report).</li>
+											<li>Redesigned the pipeline to use Markdown and Pandoc for lightweight
+												conversion, deploying the solution on AWS Lambda.</li>
+											<li>Reduced report generation time by over 90% (from 60s to 3–5s).</li>
+										</ul>
+									</div>
+									<div>
+										<p>
+											<span class="font-bold text-ctp_green">Dart Consulting and Training</span>
+											- Independent Contractor <span class="text-ctp_subtext0">(Mar 2023 - Apr 2023)</span>
+										</p>
+										<p>
+											<span class="text-ctp_sapphire">--test_automation</span>
+										</p>
+										<ul>
+											<li>Optimized grading logic to slash execution time
+												from 180 seconds down to 10 seconds per submission (18x speed improvement).</li>
+											<li>Analyzed and refactored test cases using Pytest, boosting
+												overall test coverage by 20%.</li>
+										</ul>
+									</div>
+									<div>
+										<p>
+											<span class="font-bold text-ctp_green">Kinexcs Pte Ltd</span>
+											- Software Developer Intern <span class="text-ctp_subtext0">(Jun 2022 - Aug 2022)</span>
+										</p>
+										<p>
+											<span class="text-ctp_sapphire">--musculoskeletal_assessment</span>
+										</p>
+										<ul>
+											<li>Refined application navigation and user journeys based on
+												prospective customer feedback to improve clinical usability.</li>
+											<li>Delivered key feature improvements instrumental in securing 3 pilot
+												partnerships with medical clinics.</li>
+										</ul>
+									</div>
+								</div>
+							</section>
+							<section class="mb-8">
+								<h2 class="font-bold text-ctp_peach tracking-wide text-sm mb-2"># PERSONAL PROJECTS</h2>
+								<div class="space-y-4">
+									<p>
+										<span class="font-bold text-ctp_green">/projects/alpha_app.sh</span>
+										<span class="px-2 py-0.5 ml-2 text-xs bg-ctp_green/20 text-ctp_green rounded">EXEC</span>
+										<br>
+										CLI-based task management engine optimized for developer productivity. Features real-time sync and
+										plugin architecture.
+										<span class="text-ctp_mauve">
+											#Typescript #Node.js
+										</span>
+									</p>
+									<p>
+										<span class="font-bold text-ctp_green">/projects/data_tool.sh</span>
+										<span class="px-2 py-0.5 ml-2 text-xs bg-ctp_sapphire/20 text-ctp_sapphire rounded">SCRIPT</span>
+										<br>
+										High-performance data analysis pipeline for large CSV datasets. Processes millions of rows with
+										minimal latency.
+										<span class="text-ctp_mauve">
+											#Python #Pandas
+										</span>
+									</p>
+								</div>
+							</section>
+							<section>
+								<h2 class="font-bold text-ctp_peach tracking-wide text-sm mb-2"># AUTHOR</h2>
+								<p>Written and maintained by Han Wei.</p>
+								<div class="not-prose space-y-1 mt-2">
+									<p><span class="text-ctp_sapphire w-16 inline-block">Email:</span>
+									<a class="text-ctp_sky hover:underline" href="mailto:ethan@example.com">ethan@example.com</a></p>
+									<p><span class="text-ctp_sapphire w-16 inline-block">GitHub:</span>
+									<a class="text-ctp_sky hover:underline" href="https://github.com/ethan-dev">github.com/ethan-dev</a></p>
+									<p><span class="text-ctp_sapphire w-16 inline-block">LinkedIn:</span>
+									<a class="text-ctp_sky hover:underline" href="https://linkedin.com/in/ethan-dev">linkedin.com/in/ethan-dev</a></p>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
