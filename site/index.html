@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<meta content="width=device-width, initial-scale=1.0" name="viewport">
+		<title>Developer Portfolio Website</title>
+		<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+		<script src="./tailwind_config.js"></script>
+		<link rel="stylesheet" type="text/css" href="./styles.css">
+	</head>
+
+	<body class="bg-ctp_base text-ctp_text font-display text-lg">
+		<div class="flex h-screen">
+			<aside class="w-64 bg-ctp_mantle flex flex-col shrink-0 transition-all duration-300 text-sm">
+				<div class="px-4 py-2 text-xs font-bold uppercase tracking-wider text-ctp_subtext0 border-b border-ctp_crust">
+					Explorer
+				</div>
+				<nav class="flex-1 px-2 py-2 space-y-1 overflow-y-auto">
+					<div class="flex items-center text-ctp_text cursor-pointer hover:text-ctp_sky transition-colors" onclick="toggleFolder('root-folder')">
+						<span id="icon-root-folder" class="material-icons mr-1 transition-transform">expand_more</span>
+						<span class="font-bold">PORTFOLIO</span>
+					</div>
+
+					<ul id="root-folder" class="pl-4 space-y-1 mt-1">
+						<li>
+							<a href="#about" class="nav-item flex items-center px-2 py-1 hover:bg-ctp_surface0 rounded cursor-pointer" data-path="/home/rex/" data-file="readme.md">
+								<span class="material-icons mr-2 text-ctp_sapphire">info</span>
+								README.md
+							</a>
+						</li>
+						<li>
+							<a href="#skills" class="nav-item flex items-center px-2 py-1 hover:bg-ctp_surface0 rounded cursor-pointer" data-path="/home/rex/" data-file="config.lua">
+								<span class="material-icons mr-2 text-ctp_subtext0">settings</span>
+								config.lua
+							</a>
+						</li>
+						<li>
+							<a href="#education" class="nav-item flex items-center px-2 py-1 hover:bg-ctp_surface0 rounded cursor-pointer" data-path="/home/rex/" data-file="edu.log">
+								<span class="material-icons mr-2 text-ctp_mauve">school</span>
+								edu.log
+							</a>
+						</li>
+
+						<li>
+							<div class="flex items-center px-2 py-1 hover:bg-ctp_surface0 rounded cursor-pointer group" onclick="toggleFolder('folder-internships')">
+								<span id="icon-folder-internships" class="material-icons mr-1 text-ctp_peach transition-transform group-hover:text-ctp_sky">expand_more</span>
+								<span class="group-hover:text-ctp_sky transition-colors">internships</span>
+							</div>
+							<ul id="folder-internships" class="pl-5 border-l border-ctp_crust ml-2 space-y-0.5">
+								<li>
+									<a href="#exp-ncs" class="nav-item flex items-center py-1 px-2 hover:bg-ctp_surface0 rounded text-ctp_subtext0 hover:text-ctp_text" data-path="/home/rex/internships/" data-file="ncs_ai.py">
+										<span class="material-icons mr-2 text-ctp_blue">code</span>
+										ncs_ai.py
+									</a>
+								</li>
+								<li>
+									<a href="#exp-dndts" class="nav-item flex items-center py-1 px-2 hover:bg-ctp_surface0 rounded text-ctp_subtext0 hover:text-ctp_text" data-path="/home/rex/internships/" data-file="dndts.ts">
+										<span class="material-icons mr-2 text-ctp_blue">code</span>
+										dndts.ts
+									</a>
+								</li>
+								<li>
+									<a href="#exp-kinexcs23" class="nav-item flex items-center py-1 px-2 hover:bg-ctp_surface0 rounded text-ctp_subtext0 hover:text-ctp_text" data-path="/home/rex/internships/" data-file="kinexcs_v2.md">
+										<span class="material-icons mr-2 text-ctp_lavender">description</span>
+										kinexcs_v2.ts
+									</a>
+								</li>
+								<li>
+									<a href="#exp-dart" class="nav-item flex items-center py-1 px-2 hover:bg-ctp_surface0 rounded text-ctp_subtext0 hover:text-ctp_text" data-path="/home/rex/internships/" data-file="dart.sh">
+										<span class="material-icons mr-2 text-ctp_yellow">terminal</span>
+										dart.py
+									</a>
+								</li>
+								<li>
+									<a href="#exp-kinexcs22" class="nav-item flex items-center py-1 px-2 hover:bg-ctp_surface0 rounded text-ctp_subtext0 hover:text-ctp_text" data-path="/home/rex/internships/" data-file="kinexcs_v1.md">
+										<span class="material-icons mr-2 text-ctp_lavender">description</span>
+										kinexcs_v1.js
+									</a>
+								</li>
+							</ul>
+						</li>
+
+						<li>
+							<div class="flex items-center px-2 py-1 hover:bg-ctp_surface0 rounded cursor-pointer group" onclick="toggleFolder('folder-projects')">
+								<span id="icon-folder-projects" class="material-icons mr-1 text-ctp_blue transition-transform group-hover:text-ctp_sky">expand_more</span>
+								<span class="group-hover:text-ctp_sky transition-colors">projects</span>
+							</div>
+							<ul id="folder-projects" class="pl-5 border-l border-ctp_crust ml-2 space-y-0.5">
+								<li>
+									<a href="#proj-thunderbird" class="nav-item flex items-center py-1 px-2 hover:bg-ctp_surface0 rounded text-ctp_subtext0 hover:text-ctp_text" data-path="/home/rex/projects/" data-file="thunderbird.go">
+										<span class="material-icons mr-2 text-ctp_teal">dns</span>
+										thunderbird.go
+									</a>
+								</li>
+								<li>
+									<a href="#proj-optimove" class="nav-item flex items-center py-1 px-2 hover:bg-ctp_surface0 rounded text-ctp_subtext0 hover:text-ctp_text" data-path="/home/rex/projects/" data-file="optimove.ai">
+										<span class="material-icons mr-2 text-ctp_maroon">smart_toy</span>
+										optimove.ai
+									</a>
+								</li>
+								<li>
+									<a href="#proj-peerprep" class="nav-item flex items-center py-1 px-2 hover:bg-ctp_surface0 rounded text-ctp_subtext0 hover:text-ctp_text" data-path="/home/rex/projects/" data-file="peerprep.go">
+										<span class="material-icons mr-2 text-ctp_teal">dns</span>
+										peerprep.go
+									</a>
+								</li>
+								<li>
+									<a href="#proj-teammates" class="nav-item flex items-center py-1 px-2 hover:bg-ctp_surface0 rounded text-ctp_subtext0 hover:text-ctp_text" data-path="/home/rex/projects/" data-file="teammates.java">
+										<span class="material-icons mr-2 text-ctp_red">coffee</span>
+										teammates.java
+									</a>
+								</li>
+								<li>
+									<a href="#proj-myinsurec" class="nav-item flex items-center py-1 px-2 hover:bg-ctp_surface0 rounded text-ctp_subtext0 hover:text-ctp_text" data-path="/home/rex/projects/" data-file="myinsurec.java">
+										<span class="material-icons mr-2 text-ctp_red">coffee</span>
+										myinsurec.java
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#author" class="nav-item flex items-center px-2 py-1 hover:bg-ctp_surface0 rounded cursor-pointer" data-path="/home/rex/" data-file="contribution.md">
+								<span class="material-icons mr-2 text-ctp_pink">person</span>
+								contribution.md
+							</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="p-2 text-xs border-t border-ctp_crust text-ctp_subtext0 flex justify-between items-center">
+					<span>MAN(1)</span>
+					<span>Read-only</span>
+				</div>
+			</aside>
+
+			<main class="flex-1 flex flex-col min-w-0">
+				<header class="flex text-xs items-center justify-between px-4 py-2 bg-ctp_mantle border-b border-ctp_crust sticky top-0 z-10">
+					<div class="flex items-center space-x-2 overflow-hidden">
+						<span class="material-icons text-ctp_sky text-base">terminal</span>
+						<span id="header-path" class="text-ctp_subtext0 whitespace-nowrap">/home / rex /</span>
+						<span id="header-file" class="text-ctp_text font-bold truncate">readme.md</span>
+						<span class="ml-2 px-2 py-0.5 text-xs bg-ctp_crust text-ctp_subtext0 rounded hidden sm:inline-block">READ
+							ONLY</span>
+					</div>
+					<div class="flex items-center space-x-4 text-ctp_subtext0 shrink-0">
+						<span class="hidden sm:inline">UNIX</span>
+						<span class="hidden sm:inline">UTF-8</span>
+						<span>MAN(1)</span>
+					</div>
+				</header>
+
+				<div id="content-container" class="flex-1 overflow-y-auto p-6 lg:p-8 scroll-smooth">
+					<div class="grid grid-cols-12 gap-4">
+						<div class="col-span-12 lg:col-span-11 prose prose-lg max-w-none text-ctp_text prose-headings:font-bold prose-headings:text-ctp_peach prose-headings:tracking-wide">
+							<section id="about" class="scroll-mt-10 mb-8 border-l-2 border-transparent section-block pl-4">
+								<h2 class="font-bold text-ctp_peach tracking-wide text-xl mb-2"># NAME</h2>
+								<p>
+									<span class="font-bold text-ctp_green">Han Wei</span>
+									- my personal portfolio
+								</p>
+								<h2 class="font-bold text-ctp_peach tracking-wide text-xl mb-2 mt-8"># SYNOPSIS</h2>
+								<p>
+									<span class="font-bold text-ctp_green">Han Wei</span>
+									<span class="text-ctp_subtext0">[</span>--role<span class="text-ctp_sky">="Software
+										Engineer"</span><span class="text-ctp_subtext0">]</span>
+									<span class="text-ctp_subtext0">[</span>--location<span class="text-ctp_sky">="Singapore"</span><span class="text-ctp_subtext0">]</span>
+									<span class="text-ctp_subtext0">[</span>--status<span class="text-ctp_sky">="Open To Work"</span><span class="text-ctp_subtext0">]</span>
+								</p>
+								<h2 class="font-bold text-ctp_peach tracking-wide text-xl mb-2 mt-8"># DESCRIPTION</h2>
+								<p>
+									Hi, I am <span class="font-bold text-ctp_green">Han Wei</span>, an aspired software engineer with a
+									desire to build <span class="highlight">efficient</span>, <span class="highlight">scalable</span>, and
+									<span class="highlight">maintainable</span>
+									system. Graduating with a Bachelor of Computing
+									from the National University of Singapore, I approach
+									development like solving problems equipped with strong engineering fundamental. <br>
+									I also channel my technical curiosity into my environment,
+									<span class="highlight">exploring Arch Linux</span>
+									and configuring <span class="highlight">Neovim</span>
+									to constantly refine my development workflow. <br>
+									Outside of engineering, I enjoy the strategic rigor of <span class="highlight">Chinese Chess</span>
+									and
+									<span class="highlight">Snooker/8-ball</span>, hobbies that
+									keep my problem-solving reflexes sharp.
+								</p>
+							</section>
+
+							<section id="skills" class="scroll-mt-20 mb-8 border-l-2 border-transparent section-block pl-4">
+								<h2 class="font-bold text-ctp_peach tracking-wide text-xl mb-2"># OPTIONS (SKILLS)</h2>
+								<div class="space-y-4">
+									<p>
+										<span class="text-ctp_sapphire">--languages</span>
+										Proficient in <span class="highlight">Python</span>, <span class="highlight">JavaScript/TypeScript</span>, <span class="highlight">Go</span>
+										and <span class="highlight">Java</span>.
+									</p>
+									<p>
+										<span class="text-ctp_sapphire">--frameworks</span>
+										Competent with <span class="highlight">Next.js</span>
+										and <span class="highlight">React</span>
+										ecosystem for frontend interactions, paired with backend solutions
+										like <span class="highlight">FastAPI (Python)</span>, <span class="highlight">Flask (Python)</span>
+										and <span class="highlight">Echo(go)</span>.
+										Capable of integrating AI/ML libraries such as <span class="highlight">LangChain</span>, <span class="highlight">Haystack</span>
+										and <span class="highlight">OpenAI</span>
+										into practical
+										applications.
+									</p>
+									<p>
+										<span class="text-ctp_sapphire">--tools</span>
+										Experienced in DevOps practices including <span class="highlight">Docker</span>
+										containerization and
+										cloud-native deployments via <span class="highlight">AWS
+											Lambda</span>
+										and <span class="highlight">GCP Cloud Functions</span>. Experienced in setting up
+										automation pipelines using <span class="highlight">Playwright</span>.
+									</p>
+								</div>
+							</section>
+
+							<section id="education" class="scroll-mt-20 mb-8 border-l-2 border-transparent section-block pl-4">
+								<h2 class="font-bold text-ctp_peach tracking-wide text-xl mb-2"># EDUCATION</h2>
+								<p>
+									<span class="font-bold text-ctp_green">National University of Singapore</span>
+								</p>
+								<p>
+									Bachelor of Computing (Computer Science) with Honours (Distinction) <br>
+									Second Major in Quantitative Finance
+								</p>
+								<div class="space-y-4">
+									<p>
+										<span class="text-ctp_sapphire">--stats</span>
+										<br>
+										Duration: Aug 2021 - Jun 2025 <br>
+										<a class="no-underline text-inherit" href="https://github.com/rexong/resume/blob/main/documents/final_transcript.pdf">GPA: 4.34 / 5.0
+											<span class="material-icons ml-1 link-icon" role="img" aria-label="link icon">link</span></a>
+									</p>
+									<p>
+										<span class="text-ctp_sapphire">--accolades</span>
+										<br>
+										<a class="no-underline text-inherit" href="https://credentials.nus.edu.sg/6cfb8703-1812-4f4e-8936-b2abcb9d2cb4#acc.ngbqPsju">Dean's List
+											(AY23/24 Semester 1) <span class="material-icons ml-1 link-icon" role="img" aria-label="link icon">link</span></a><br>
+										<a class="no-underline text-inherit" href="https://credentials.nus.edu.sg/7454f588-3703-465b-b0bf-19ca33d5ca9a#acc.cZ2Ep9Xy">Distinction
+											in Software Engineering <span class="material-icons ml-1 link-icon" role="img" aria-label="link icon">link</span></a><br>
+										<a class="no-underline text-inherit" href="https://credentials.nus.edu.sg/6ea33b93-f936-4ab3-af95-ee99dad9d26b#acc.mND5KAnh">Merit in
+											Artificial Intelligence <span class="material-icons ml-1 link-icon" role="img" aria-label="link icon">link</span></a>
+									</p>
+									<div>
+										<p class="my-2">
+											<span class="text-ctp_sapphire">--teaching_assistant</span>
+											Contributed to academic as a TA for modules
+										</p>
+										<ul class="my-2">
+											<li><span>CS4248 Natural Language Processing (Jan 2025 - May 2025)</span>
+											<br>
+											Mentored 4 project groups (20 students) and contributed to academic rigor by authoring 5 questions
+											for the final examination.</li>
+
+											<li><span>CS3219 Software Engineering Principles and Patterns (Aug 2024 - Nov 2024)</span>
+											<br>
+											Tutored 2 classes (40+ students), authored weekly content slides for insturction, and mentored 4
+											project groups through a development lifecycle.</li>
+										</ul>
+									</div>
+								</div>
+							</section>
+
+							<section class="mb-8 pl-4">
+								<h2 class="font-bold text-ctp_peach tracking-wide text-xl mb-4"># INTERNSHIPS</h2>
+								<div class="space-y-8">
+
+									<div id="exp-ncs" class="section-block scroll-mt-24 border-l-2 border-transparent pl-4">
+										<p>
+											<span class="font-bold text-ctp_green">NCS Pte Ltd</span>
+											- Generative AI Intern <span class="text-ctp_subtext0">(Jan 2025 - Jun 2025)</span>
+										</p>
+										<p class="my-2">
+											<span class="text-ctp_sapphire">--llm_eval_framework</span>
+											Engineered a "Human-in-the-Loop" evaluation platform to address high-risk LLM hallucinations.
+										</p>
+										<div class="not-prose">
+											<span class="chip bg-ctp_green text-ctp_base">Python</span>
+											<span class="chip bg-ctp_peach text-ctp_base">FastAPI</span>
+											<span class="chip bg-ctp_peach text-ctp_base">Haystack</span>
+											<span class="chip bg-ctp_sky text-ctp_base">Streamlit</span>
+											<span class="chip bg-ctp_mauve text-ctp_base">RNN</span>
+										</div>
+										<ul class="my-2">
+											<li>Built a POC using Python, Haystack, and Streamlit that integrates
+												synthetic conversation generation with user-defined personas.</li>
+											<li>Implemented an evaluation pipeline utilizing <span class="highlight">RNN classification</span>
+												to
+												categorize feedback and create "LLM-as-a-Judge" evaluators.</li>
+											<li>Clinched <span class="highlight">1st Place in the "NEXT Ignite" hackathon</span>
+												and
+												<span class="highlight">secured management resources</span>
+												for productization.</li>
+											<li>Platform projected to <span class="highlight">achieve 90% accuracy</span>
+												in evaluation within 5
+												iterations.</li>
+										</ul>
+										<p class="my-2">
+											<span class="text-ctp_sapphire">--workflow_automation</span>
+											Explored different technologies and created multiple applications for testing/documenting automation
+											and data collection.
+										</p>
+										<div class="not-prose">
+											<span class="chip bg-ctp_sky text-ctp_base">Playwright</span>
+											<span class="chip bg-ctp_mauve text-ctp_base">MCP</span>
+											<span class="chip bg-ctp_peach text-ctp_base">Next.js</span>
+										</div>
+										<ul class="my-2">
+											<li><span>mcp-cli:</span>
+											Explored <span class="highlight">MCP (Model Context Protocol)</span>
+											for complex automation,
+											granting a CLI chatbot
+											control over Playwright servers and file systems to write documentation and generate
+											test cases.</li>
+											<li><span>Chat Annotation Application:</span>
+											Assemble 5 critics to generate <span class="highlight">200-300 pieces of
+												high-quality critiqued data</span>
+											to configure the LLM evaluators using a web application built using Next.js.</li>
+											<li><span>Screenshot Automation Pipeline:</span>
+											Wrote scripts to dynamically capture up-to-date screenshots,
+											preventing outdated documentation visuals.</li>
+										</ul>
+									</div>
+
+									<div id="exp-dndts" class="section-block scroll-mt-24 border-l-2 border-transparent pl-4">
+										<p>
+											<span class="font-bold text-ctp_green">DNDTS Pte Ltd</span>
+											- Software Developer Intern <span class="text-ctp_subtext0">(May 2024 - Aug 2024)</span>
+										</p>
+										<p class="my-2">
+											<span class="text-ctp_sapphire">--computer_vision_integration</span>
+											Full-stack engineering focused on process automation.
+										</p>
+										<div class="not-prose">
+											<span class="chip bg-ctp_green text-ctp_base">TypeScript</span>
+											<span class="chip bg-ctp_peach text-ctp_base">Next.js</span>
+											<span class="chip bg-ctp_mauve text-ctp_base">Roboflow</span>
+										</div>
+										<ul class="my-2">
+											<li>Developed a Next.js mobile-web application integrated with
+												<span class="highlight">Roboflow computer vision models</span>
+												to identify, crop, and decode
+												multiple
+												barcodes from a single image.</li>
+											<li>Replaced manual infrared scanning, reducing shipment
+												processing time from <span class="highlight">4 hours to under 2 hours (50% efficiency
+													increase)</span>.</li>
+											<li>Enabled staff unfamiliar with the process to execute
+												high-volume shipments effectively.</li>
+										</ul>
+										<p class="my-2">
+											<span class="text-ctp_sapphire">--rag_application</span>
+											Leverage on RAG to build a chatbot that improves the support's efficiency.
+										</p>
+										<div class="not-prose">
+											<span class="chip bg-ctp_green text-ctp_base">Python</span>
+											<span class="chip bg-ctp_peach text-ctp_base">LangChain</span>
+											<span class="chip bg-ctp_mauve text-ctp_base">ChromaDB</span>
+											<span class="chip bg-ctp_sky text-ctp_base">Docker</span>
+											<span class="chip bg-ctp_sky text-ctp_base">Streamlit</span>
+										</div>
+										<ul class="my-2">
+											<li>Architected a <span class="highlight">Retrieval-Augmented Generation (RAG) pipeline</span>
+												using LangChain, ChromaDB, and Streamlit, containerized via Docker.</li>
+											<li>Generated <span class="highlight">$150,000 in annual savings</span>
+												by reducing support headcount requirements.</li>
+											<li>Reduced new staff onboarding time by 60% (from 1 week to 2
+												days) by automating knowledge retrieval from a 300-page handbook.</li>
+										</ul>
+									</div>
+
+									<div id="exp-kinexcs23" class="section-block scroll-mt-24 border-l-2 border-transparent pl-4">
+										<p>
+											<span class="font-bold text-ctp_green">Kinexcs Pte Ltd</span>
+											- Software Developer Intern <span class="text-ctp_subtext0">(May 2023 - Aug 2023)</span>
+										</p>
+										<p class="my-2">
+											<span class="text-ctp_sapphire">--visual_data_analytics</span>
+											Created patient recovery trend reports using Chart.js.
+										</p>
+										<div class="not-prose">
+											<span class="chip bg-ctp_green text-ctp_base">JavaScript</span>
+											<span class="chip bg-ctp_peach text-ctp_base">Chart.js</span>
+											<span class="chip bg-ctp_sky text-ctp_base">AWS Lambda</span>
+										</div>
+										<ul class="my-2">
+											<li>Integrated Chart.js for visual analytics to track patient recovery trends.</li>
+											<li>Deployed the generation pipeline on AWS Lambda after due consideration of costs.</li>
+											<li>Reduced clinician analysis time from <span class="highlight">15 minutes down to under 1
+													minute</span>
+												per patient.</li>
+										</ul>
+										<p class="my-2">
+											<span class="text-ctp_sapphire">--pipeline_optimization</span>
+											Investigated bottleneck in pipeline and engineered a solution that drastically improve
+											efficiency.
+										</p>
+										<div class="not-prose">
+											<span class="chip bg-ctp_mauve text-ctp_base">Pandoc</span>
+											<span class="chip bg-ctp_mauve text-ctp_base">Markdown</span>
+										</div>
+										<ul class="my-2">
+											<li>Identified performance bottlenecks in PDF generation caused by
+												heavy "Headless Browser" rendering (taking ~1 min/report).</li>
+											<li>Redesigned the pipeline to use Markdown and Pandoc for lightweight conversion.</li>
+											<li>Reduced report generation time by <span class="highlight">over 90% (from 60s to 3–5s)</span>.</li>
+										</ul>
+									</div>
+
+									<div id="exp-dart" class="section-block scroll-mt-24 border-l-2 border-transparent pl-4">
+										<p>
+											<span class="font-bold text-ctp_green">Dart Consulting</span>
+											- Independent Contractor <span class="text-ctp_subtext0">(Mar 2023 - Apr 2023)</span>
+										</p>
+										<p class="my-2">
+											<span class="text-ctp_sapphire">--grading_optimization</span>
+											Implement intricate test cases to ensure thorough test coverage.
+										</p>
+										<div class="not-prose">
+											<span class="chip bg-ctp_green text-ctp_base">Python</span>
+											<span class="chip bg-ctp_peach text-ctp_base">Pytest</span>
+										</div>
+										<ul class="my-2">
+											<li>Optimized grading logic to slash execution time
+												from 180 seconds down to 10 seconds per submission (18x speed improvement).</li>
+											<li>Analyzed and refactored test cases using Pytest, boosting
+												overall test coverage by 20%.</li>
+										</ul>
+									</div>
+
+									<div id="exp-kinexcs22" class="section-block scroll-mt-24 border-l-2 border-transparent pl-4">
+										<p>
+											<span class="font-bold text-ctp_green">Kinexcs Pte Ltd</span>
+											- Software Developer Intern <span class="text-ctp_subtext0">(Jun 2022 - Aug 2022)</span>
+										</p>
+										<p class="my-2">
+											<span class="text-ctp_sapphire">--product_iteration</span>
+											Refined web application aimed to assess patient's musculoskeletal injuries.
+										</p>
+										<div class="not-prose">
+											<span class="chip bg-ctp_green text-ctp_base">JavaScript</span>
+											<span class="chip bg-ctp_peach text-ctp_base">React</span>
+										</div>
+										<ul class="my-2">
+											<li>Refined application navigation and user journeys based on
+												prospective customer feedback to <span class="highlight">improve clinical usability</span>.</li>
+											<li>Delivered key feature improvements instrumental in securing <span class="highlight">3 pilot
+													partnerships</span>
+												with medical clinics.</li>
+										</ul>
+									</div>
+								</div>
+							</section>
+
+							<section class="mb-8 pl-4">
+								<h2 class="font-bold text-ctp_peach tracking-wide text-xl mb-4"># PERSONAL PROJECTS</h2>
+								<div class="space-y-8">
+
+									<div id="proj-thunderbird" class="section-block scroll-mt-24 border-l-2 border-transparent pl-4">
+										<p class="mb-2">
+											<span class="font-bold text-ctp_green">ThunderbirdAuth</span>
+											- Developer <span class="text-ctp_subtext0">(Oct 2025 - Dec 2025)</span>
+											<br>
+											A lightweight, file-based authentication server built for home-lab environments to replace
+											resource-heavy open-sourced solutions (like Authentik).
+										</p>
+										<div class="not-prose">
+											<span class="chip bg-ctp_green text-ctp_base">Go</span>
+											<span class="chip bg-ctp_mauve text-ctp_base">LDAP</span>
+											<span class="chip bg-ctp_mauve text-ctp_base">Auth</span>
+										</div>
+										<p class="my-2">
+											<span class="text-ctp_sapphire">--resource_optimization</span>
+											Prioritized <span class="highlight">minimal dependencies</span>
+											by utilizing the Go Standard Library
+											exclusively, avoiding heavy
+											frameworks.
+										</p>
+										<p class="my-2">
+											<span class="text-ctp_sapphire">--security_protocols</span>
+											Implemented <span class="highlight">Basic Auth, LDAP Authentication Protocols</span>
+											with
+											extensibility designed for other
+											protocols like OAuth2/OIDC.
+										</p>
+									</div>
+
+									<div id="proj-optimove" class="section-block scroll-mt-24 border-l-2 border-transparent pl-4">
+										<p class="mb-2">
+											<span class="font-bold text-ctp_green">OptiMove AI</span>
+											- Developer <span class="text-ctp_subtext0">(Feb 2025 - Apr 2025)</span>
+											<br>An agentic AI system aimed to enhance the reliability of crowdsourced traffic data
+											from LTA's public API.
+										</p>
+										<div class="not-prose">
+											<span class="chip bg-ctp_green text-ctp_base">Python</span>
+											<span class="chip bg-ctp_peach text-ctp_base">Flask</span>
+											<span class="chip bg-ctp_sky text-ctp_base">Streamlit</span>
+											<span class="chip bg-ctp_mauve text-ctp_base">OpenAI</span>
+										</div>
+										<p class="my-2">
+											<span class="text-ctp_sapphire">--agentic_workflow</span>
+											Developed an <span class="highlight">agentic AI pipeline</span>
+											that improves the reliability of
+											crowdsourced traffic data from
+											LTA’s public API by consolidating duplicate reports and prioritizing significant events. The system
+											<span class="highlight">reduces data noise</span>
+											and enables authorities to allocate response
+											resources more effectively through
+											LLM-based validation and ranking, delivered via a Flask backend with Streamlit visualization.
+										</p>
+									</div>
+
+									<div id="proj-peerprep" class="section-block scroll-mt-24 border-l-2 border-transparent pl-4">
+										<p class="mb-2">
+											<span class="font-bold text-ctp_green">PeerPrep</span>
+											- Developer <span class="text-ctp_subtext0">(Aug 2023 - Oct 2023)</span>
+											<br>
+											Collaborative Technical Interview Platform
+										</p>
+										<div class="not-prose">
+											<span class="chip bg-ctp_green text-ctp_base">Go</span>
+											<span class="chip bg-ctp_peach text-ctp_base">React</span>
+											<span class="chip bg-ctp_peach text-ctp_base">Echo</span>
+											<span class="chip bg-ctp_sky text-ctp_base">Docker</span>
+										</div>
+										<p class="my-2">
+											<span class="text-ctp_sapphire">--distributed_systems</span>
+											Designed and implemented <span class="highlight">scalable User and Authentication services</span>
+											in
+											Go, containerized to support
+											300+ accounts, with secure <span class="highlight">OAuth2/OIDC</span>
+											and <span class="highlight">JWT-based</span>
+											stateless authentication. On the frontend,
+											built a React application leveraging WebSockets to deliver <span class="highlight">real-time user
+												updates</span>, enabling seamless
+											collaboration in a shared live code editor for peer technical interview preparation.
+										</p>
+									</div>
+
+									<div id="proj-teammates" class="section-block scroll-mt-24 border-l-2 border-transparent pl-4">
+										<p class="mb-2">
+											<span class="font-bold text-ctp_green">TEAMMATES</span>
+											- Contributor <span class="text-ctp_subtext0">(Jun 2023 - Aug 2023)</span>
+											<br>
+											A feedback management system used by thousands of students globally.
+										</p>
+										<div class="not-prose">
+											<span class="chip bg-ctp_peach text-ctp_base">Angular</span>
+										</div>
+										<p class="my-2">
+											<span class="text-ctp_sapphire">--frontend_maintenance</span>
+											Contributed to the Angular-based frontend by authoring and merging six pull requests that <span class="highlight">improved
+												overall user experience</span>, and proactively identified, documented, and <span class="highlight">reported two critical
+												production-level bugs</span>
+											on GitHub that could have caused application crashes, improving
+											system
+											stability.
+										</p>
+									</div>
+
+									<div id="proj-myinsurec" class="section-block scroll-mt-24 border-l-2 border-transparent pl-4">
+										<p class="mb-2">
+											<span class="font-bold text-ctp_green">MyInsuRec</span>
+											- Developer <span class="text-ctp_subtext0">(Aug 2022 - Oct 2022)</span>
+											<br>
+											Legacy System Modernization for insurance agent to manage their clients' schedules and policies.
+										</p>
+										<div class="not-prose">
+											<span class="chip bg-ctp_green text-ctp_base">Java</span>
+											<span class="chip bg-ctp_peach text-ctp_base">JavaFx</span>
+										</div>
+										<p class="my-2">
+											<span class="text-ctp_sapphire">--legacy_modernization</span>
+											Transformed a legacy system into a modern CRM platform, increasing insurance
+											agents’ client tracking and meeting <span class="highlight">efficiency by 30%</span>
+											through
+											automated workflows.
+										</p>
+									</div>
+								</div>
+							</section>
+
+							<section id="author" class="border-l-2 border-transparent section-block pl-4">
+								<h2 class="font-bold text-ctp_peach tracking-wide text-xl mb-2"># AUTHOR</h2>
+								<p>Written and maintained by Han Wei. <br>
+									Website designed with Stitch.</p>
+								<div class="not-prose space-y-1 mt-2">
+									<p><span class="text-ctp_sapphire w-16 inline-block">Email:</span>
+									<a class="text-ctp_sky hover:underline" href="mailto:onghanwei@u.nus.edu">onghanwei@u.nus.edu</a></p>
+									<p><span class="text-ctp_sapphire w-16 inline-block">GitHub:</span>
+									<a class="text-ctp_sky hover:underline" href="https://github.com/rexong">github.com/rexong</a></p>
+								</div>
+							</section>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+
+		<script src="./app.js"></script>
+	</body>
+</html>
